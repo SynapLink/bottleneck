@@ -1,9 +1,20 @@
 <html>
-  <head>
-    <meta name="color-scheme" content="light dark">
-  </head>
-  <body cz-shortcut-listen="true">
-    <pre style="word-wrap: break-word; white-space: pre-wrap;">static.bottleneck.cc</pre>
-    <pre style="word-wrap: break-word; white-space: pre-wrap;">maybe you wanted to visit readme.bottleneck.cc</pre>
-  </body>
+
+<head>
+  <meta name="color-scheme" content="light dark">
+</head>
+
+<body cz-shortcut-listen="true">
+  <pre style="word-wrap: break-word; white-space: pre-wrap;">static.bottleneck.cc</pre>
+  <pre style="word-wrap: break-word; white-space: pre-wrap;">maybe you wanted to visit readme.bottleneck.cc</pre>
+  <pre style="word-wrap: break-word; white-space: pre-wrap;"></pre>
+  <pre style="word-wrap: break-word; white-space: pre-wrap;" onclick="generateToken()">generate token</pre>
+  <script>
+    function generateToken() {
+      const token = crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2) + Date.now().toString(36);
+      alert(token);
+    }
+  </script>
+</body>
+
 </html>
